@@ -66,6 +66,10 @@ Visualmente esto se entiende mas con la siguiente simulación, donde se desea vi
 
 ![diagrama](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab04_display_7segx4/doc/4sseg.jpg)
 
+se realiza montaje de simulacion se deja imagen 
+
+![diagrama](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/Imagenes/simulador.jpeg)
+
 
 ## Diagrama Caja negra 
 
