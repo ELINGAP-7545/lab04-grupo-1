@@ -1,12 +1,15 @@
 # lab04
 
-Jaider Neira 
-Sergio Obando
-Julian Diaz
+Jaider Neira. 
+Sergio Obando.
+Julian Diaz.
 
 BCD2SSeg
 
 # Introducción
+
+montaje se simulacion.
+![sseg](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/Imagenes/uno.jpeg)
 
 En este paquete de trabajo los estudiantes deben familiarizarce con el  framework de trabajo de la FPGA seleccionado, a partir de la descripción dedecodificador BCD2SSeg
 
