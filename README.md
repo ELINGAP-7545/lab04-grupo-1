@@ -1,8 +1,8 @@
 # lab04
 
-**Jaider Neira
-**Sergio Obando
-**Julian Diaz
+* Jaider Neira
+* Sergio Obando
+* Julian Diaz
 
 BCD2SSeg
 
