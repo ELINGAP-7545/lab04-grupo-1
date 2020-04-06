@@ -48,10 +48,9 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 
 # Ejercicio - Visualización Dinámica 4 Display
 
+## Primer Entregable
 
-** Primer Entregable
-
-' module BCDtoSSeg (BCD, SSeg, an);
+'module BCDtoSSeg (BCD, SSeg, an);
 
   input [3:0] BCD;
   output reg [0:6] SSeg;
@@ -85,8 +84,7 @@ end
 
 endmodule'
 
-
-** Segundo Entregable
+## Segundo Entregable
 
 Se realiza montaje de simulacion se deja imagen 
 
