@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 
-module BCDtoSSeg_TB;
+module BCD2SSeg_TB;
 
 	// Inputs
 	reg [3:0] BCD;

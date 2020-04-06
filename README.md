@@ -34,8 +34,6 @@ A continuación se presentan los pasos recomendados para el ejercicio:
 
 ![bcd_black](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab03-BCD2SSeg/doc/BCD2SSeg.jpg)
 
-Si observa la caja negra/ funcional  ademas  de la salidad de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
-
 
 **Definir la descripción Funcional**
 
@@ -51,20 +49,46 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 # Ejercicio - Visualización Dinámica 4 Display
 
 
-Si el diseño digital de algún sistema se requiere mas de un display de 7 segmentos, es necesario  generar una visualización tal que sea necesario el menor número de pines para conectar todos los display en con la FPGA.
+##Primer Entregable
 
-Por ahora, se ha visualizado el números en un solo display de 7 segmentos. Pero en la mayoría de los casos, los 7 pines de los cátodos están inter-conectados entre cada display, como se observa en la figura:
+'module BCDtoSSeg (BCD, SSeg, an);
 
-![conex](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab04_display_7segx4/doc/conex.png)
+  input [3:0] BCD;
+  output reg [0:6] SSeg;
+  output [3:0] an;
 
-Por lo tanto, se debe  realizar una multiplexación  entre los Anodos de cada Display, con el fin de visualizar en cada display un número diferente.  En otras palabras, en cada instante de tiempo, solo un display se encuentra activo. En este sentido, se debe garantizar que el destello en la visualización entre cada display no se perciba. Para ello, cada display debe activarse máximo cada 16 ms.
-
-Visualmente esto se entiende mas con la siguiente simulación, donde se desea visualizar el  número en representación hexadecimal `0x4321`:
+assign an=4'b1110;
 
 
-![diagrama](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab04_display_7segx4/doc/4sseg.jpg)
+always @ ( * ) begin
+  case (BCD)
+   4'b0000: SSeg = 7'b0000001; // "0"  
+	4'b0001: SSeg = 7'b1001111; // "1" 
+	4'b0010: SSeg = 7'b0010010; // "2" 
+	4'b0011: SSeg = 7'b0000110; // "3" 
+	4'b0100: SSeg = 7'b1001100; // "4" 
+	4'b0101: SSeg = 7'b0100100; // "5" 
+	4'b0110: SSeg = 7'b0100000; // "6" 
+	4'b0111: SSeg = 7'b0001111; // "7" 
+	4'b1000: SSeg = 7'b0000000; // "8"  
+	4'b1001: SSeg = 7'b0000100; // "9" 
+   4'ha: SSeg = 7'b0001000;  
+   4'hb: SSeg = 7'b1100000;
+   4'hc: SSeg = 7'b0110001;
+   4'hd: SSeg = 7'b1000010;
+   4'he: SSeg = 7'b0110000;
+   4'hf: SSeg = 7'b0111000;
+    default:
+    SSeg = 0;
+  endcase
+end
 
-se realiza montaje de simulacion se deja imagen 
+endmodule
+
+
+##Segundo Entregable
+
+Se realiza montaje de simulacion se deja imagen 
 
 ![diagrama](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/Imagenes/simulador.jpeg)
 
