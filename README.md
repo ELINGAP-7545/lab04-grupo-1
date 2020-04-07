@@ -9,13 +9,13 @@ BCD2SSeg
 # Introducción
 
 
-En este paquete de trabajo los estudiantes deben familiarizarce con el  framework de trabajo de la FPGA seleccionado, a partir de la descripción dedecodificador BCD2SSeg
+realizamos cambios para visualizar en simulacion el estado con 7 segmentos y observar el cambio de numeracion en decimal.
 
-Para este paquete de trabajo, deben estar inscrito en un grupo y clonar la información del siguiente link [WP04](https://classroom.github.com/g/zCBwHHKX). Una vez aceptado el repositorio debe descargarlo en su computador, para ello debe clonar el mismo. Si no sabe cómo hacerlo revise la metodología de trabajo, donde se explica el proceso
+clonamos el proyecto y miramos los posibles cambios a realizar desde el codigo fuente hasta el testbench, 
 
-Las documentación deben estar diligencia en el archivo README.md del repositorio clonado.
+estos cambios que realizamos son para ver que hace cada funcion o que puede realizar.
 
-Una vez clone el repositorio, realice lo siguiente:
+Realizamos comentarios en el codigo para que sea mas entendible y asi poder explicarlo de una manera facil.
 
 ## Diseño BCD-7seg
 
@@ -23,10 +23,13 @@ En este punto, ya se estar en la capacidad de describir e implementar Hardware s
 
 En este Ejercicio se propone que realicen el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:
 
+anodo comun este funciona con una señal de 1 mostrara una luz indicando de esta forma podremos ver que si colocamos otro 1 podremos ver un numero en decimal como se muestra en la imagen 
+
+de esta forma si tenemos en binario 0000110 nos mostrara un 1 en decimal 
+
 
 ![gif display](https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif)
 
-Imagen tomada de [User:Guam + Various](https://commons.wikimedia.org/wiki/File:Seven_segment_display-animated.gif)
 
 A continuación se presentan los pasos recomendados para el ejercicio:
 
@@ -34,19 +37,6 @@ A continuación se presentan los pasos recomendados para el ejercicio:
 
 ![bcd_black](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab03-BCD2SSeg/doc/BCD2SSeg.jpg)
 
-
-**Definir la descripción Funcional**
-
-Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recuerde que cada Segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria  de `Sseg es 0110000`. observe la gráfica a continuación, para generar las salidas acorde al número de entrada.
-
-![sseg](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/7_segment_display_labeled.svg/1024px-7_segment_display_labeled.svg.png)
-
-
-* Definir en  HDL el comportamiento del sistema ** :  Use Verilog para hacer la descripción funcional
-**simulación de Sistema** :  Use el Testbench para este fin.
-
-
-# Ejercicio - Visualización Dinámica 4 Display
 
 ## Primer Entregable
 
@@ -81,18 +71,9 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 * Selector de Ánodo: Sincronizado con la frecuencia  que genera el divisor, cambia en cada instante de tiempo el  ánodo, se puede ver como un registro de desplazamiento del bit 0 `1110 1101 1011 0111`
 * Selector de Datos: dependiendo del ánodo activado, activa los datos correspondientes.
 
-# Entregables
+# Entregamos
 
-Una vez clone el repositorio y lea la anterior guia, realice lo siguiente:
-
-En el paquete de trabajo [WP04](https://classroom.github.com/g/zCBwHHKX)   esta la descripción del hardware que se implementa para visualizar un número hexadecimal de 32 bits en un display  y en 4 display de 7 segmentos.
-
-* Comprenda cada línea del código HDL de los  archivos que se encuentra en la carpera src. Si cree necesario realice los respectivos comentarios en el mismo archivo y comente
-* Realice en quartus la simulación para el BCD-7seg, analice los resultados.
-* Cree el nuevo proyecto HDL para Visualización Dinámica 4 Display, tomando como base los archivos dados.
-* Creer el archivo testbench.v
-* Genera la simulación, Revise que el sistema funciona como usted lo esperaba. Realice lo comentarios necesarios en el archivo README.md.
-* Modificar o Añadir los bloques necesarios para que la visualización sea en representación Decimal y no Hexadecimal.
-* Realice la respectiva publicación del repositorio antes de la fecha dada con todo el código  fuente 
+* Imagen de visualizacion o simulacion.
+* Realizamos modificaciones para el proyecto y realizar una visualizacion dinamica.
 
 
