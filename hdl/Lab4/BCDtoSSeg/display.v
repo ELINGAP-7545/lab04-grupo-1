@@ -15,7 +15,7 @@ reg [3:0]BCD=0;
  
 BCDtoSSeg bcdtosseg(.BCD(BCD), .SSeg(sseg));
 
-reg [26:0] cfreq=0;
+reg [26:0] cfreq=0; 
 wire enable;
 
 // Divisor de frecuecia
@@ -28,15 +28,15 @@ always @(posedge clk) begin
 	end else begin
 		cfreq <=cfreq+1;
 	end
-end
+end   //se utiliza cuando se va hacer la configuracion de la FPGA
 
 reg [1:0] count =0;
-always @(posedge enable) begin
-		if(rst==1) begin
+always @(posedge enable) begin  //primera maquina de estado dependemos del estado del enable
+		if(rst==1) begin //reset del sistema, segunda maquina de estado
 			count<= 0;
-			an<=4'b1111; 
+			an<=4'b1111; //corrimiento de los anodos
 		end else begin 
-			count<= count+1;
+			count<= count+1; //contador para el estado de los display
 			an<=4'b1101; 
 			case (count) 
 				2'h0: begin BCD <= num[3:0];   an<=4'b1110; end 
@@ -46,5 +46,7 @@ always @(posedge enable) begin
 			endcase
 		end
 end
+
+
 
 endmodule

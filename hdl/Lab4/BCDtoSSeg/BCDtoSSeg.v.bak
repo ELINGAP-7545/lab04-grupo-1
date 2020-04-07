@@ -1,7 +1,7 @@
 module BCDtoSSeg (BCD, SSeg);
 
-  input [3:0] BCD;        //4 bit para cada segmento del display
-  output reg [6:0] SSeg;  //7 segmentos  
+  input [3:0] BCD;
+  output reg [6:0] SSeg;
 always @ ( * ) begin
   case (BCD)
      4'b0000: SSeg = 7'b0000001; // "0"  
@@ -14,14 +14,14 @@ always @ ( * ) begin
 	4'b0111: SSeg = 7'b0001111; // "7" 
 	4'b1000: SSeg = 7'b0000000; // "8"  
 	4'b1001: SSeg = 7'b0000100; // "9" 
-   4'ha: SSeg = 7'b0001000;    //"a"
-   4'hb: SSeg = 7'b1100000;    //"b"
-   4'hc: SSeg = 7'b0110001;    //"c"
-   4'hd: SSeg = 7'b1000010;    //"d" 
-   4'he: SSeg = 7'b0110000;    //"e"
-   4'hf: SSeg = 7'b0111000;    //"f"
+   4'ha: SSeg = 7'b0001000;  
+   4'hb: SSeg = 7'b1100000;
+   4'hc: SSeg = 7'b0110001;
+   4'hd: SSeg = 7'b1000010;
+   4'he: SSeg = 7'b0110000;
+   4'hf: SSeg = 7'b0111000;
     default:
-    SSeg = 0;                  
+    SSeg = 0;
   endcase
 end
 
