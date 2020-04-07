@@ -75,5 +75,5 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 
 * Imagen de visualizacion o simulacion.
 * Realizamos modificaciones para el proyecto y realizar una visualizacion dinamica.
-
+* modificacion testbench.
 
