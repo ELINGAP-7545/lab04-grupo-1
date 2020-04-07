@@ -51,7 +51,7 @@ Se realiza montaje de simulacion se deja imagen
 
 ## Tercer Entregable
 
-![Capture3](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/Captura3.PNG)
+![Capture3](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/Imagenes/Captura3.PNG)
 
 ## Diagrama Caja negra 
 
