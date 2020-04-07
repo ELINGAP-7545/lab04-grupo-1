@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/simulation/modelsim
 vBCDtoSSeg
-Z1 !s110 1586229794
+Z1 !s110 1586231491
 !i10b 1
 !s100 BXjzEoQY[??UPlFM`;K`D3
 IEVgBJhI]ZW95l:_NYOhET3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1586229794.000000
+Z4 !s108 1586231491.000000
 !s107 C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/BCDtoSSeg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg|C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/BCDtoSSeg.v|
 !i113 1
@@ -54,13 +54,13 @@ R5
 R6
 R7
 vtestbench
-!s110 1586229795
+!s110 1586231492
 !i10b 1
-!s100 T=7l2fm3cm?`f51ZYj`mD1
-ILPO_YG`4O7>jWgcHQRZ:a1
+!s100 caLD[[nzkQCM9OIS0U_4o2
+IS>9h_BZTNTM[e7IgIzVgK3
 R2
 R0
-w1586229699
+w1586231448
 8C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/testbench.v
 FC:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/testbench.v
 L0 25
@@ -68,7 +68,7 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1586231492.000000
 !s107 C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg|C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/testbench.v|
 !i113 1

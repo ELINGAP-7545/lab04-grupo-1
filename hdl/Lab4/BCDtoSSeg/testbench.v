@@ -28,8 +28,7 @@ module testbench;
 	reg [15:0] num;
 	reg clk2;
 	reg rst;
-	reg [15:0] i;
-	reg [3:0] BCD=0;
+	reg [3:0] BCD;
 	
 
 	// Outputs
@@ -46,7 +45,7 @@ module testbench;
 		rst = 1;
 		#10 rst =0;
 		
-		for (i=0;i<100;i=i+1) 
+		for (BCD=0;BCD<16;BCD=BCD+1) 
 		clk2=0;
 		rst=1;
 		#10 rst=0;
