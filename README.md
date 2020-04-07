@@ -50,7 +50,7 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 
 ## Primer Entregable
 
-`` `
+`(hdl/Lab4/BCDtoSSeg/BCDtoSSeg.v)
 module BCDtoSSeg (BCD, SSeg);
 
   input [3:0] BCD;
@@ -78,10 +78,7 @@ always @ ( * ) begin
   endcase
 end
 
-endmodule
-
-
-`` 
+endmodule`
 
 
 ## Segundo Entregable
