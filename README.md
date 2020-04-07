@@ -50,7 +50,7 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 
 ## Primer Entregable
 
-``(https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/hdl/src/display_7segx4/BCDtoSSeg.v) ``
+![hdl/src/display_7segx4/BCDtoSSeg.v](https://github.com/ELINGAP-7545/lab04-grupo-1/blob/master/hdl/src/display_7segx4/BCDtoSSeg.v) 
 
 
 ## Segundo Entregable
