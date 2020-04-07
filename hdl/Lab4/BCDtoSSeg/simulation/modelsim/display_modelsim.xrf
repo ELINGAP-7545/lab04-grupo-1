@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/Lab4/BCDtoSSeg/display.v
-source_file = 1, C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/Lab4/BCDtoSSeg/BCDtoSSeg.v
-source_file = 1, C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/Lab4/BCDtoSSeg/db/display.cbx.xml
+source_file = 1, C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/display.v
+source_file = 1, C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/BCDtoSSeg.v
+source_file = 1, C:/Users/ivano/OneDrive/Documents/GitHub/lab04-grupo-1/hdl/Lab4/BCDtoSSeg/db/display.cbx.xml
 design_name = display
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, display, 1
 instance = comp, \sseg[6]~output , sseg[6]~output, display, 1
